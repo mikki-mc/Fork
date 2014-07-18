@@ -34,7 +34,7 @@ function attackHook(attacker, victim) {
 		//Entity.setHealth(victim, Entity.getHealth(victim)+1); //restore health back to normal (presumes player hit villager with empty hand and not sword, etc)
 		showTradeGui();
     }
-if (Entity.getEntityTypeId(victim) == 15:1) { //player attacked a villager
+if (Entity.getEntityTypeId(victim) == 15, 1) { //player attacked a villager
         preventDefault(); //thanks to PEModder from the Minecraft forums for reminding me that preventDefault(); exists (http://www.minecraftforum.net/forums/minecraft-pocket-edition/mcpe-mods-tools/2140815-trading-mod-android-only-due-to-ui#c13)
 		//Entity.setHealth(victim, Entity.getHealth(victim)+1); //restore health back to normal (presumes player hit villager with empty hand and not sword, etc)
 		showTradeGuiLibrarian();
