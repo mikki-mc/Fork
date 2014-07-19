@@ -59,8 +59,8 @@ if (Entity.getEntityTypeId(victim) == 15){
 var demo = Entity.getEntityTypeId(victim);
              print("Error: "+demo);
 
-var demo1 = Entity.getRenderType(victim);
-             print("Error: "+demo1);
+var demo1 = Entity.getMobSkin(victim);
+             print("Skin: "+demo1);
 		showTradeGui();
        }
     }
