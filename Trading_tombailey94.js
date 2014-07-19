@@ -83,10 +83,10 @@ function showTradeGui(){
 				
 				var tradeButton = new android.widget.Button(ctx);
 				tradeButton.setText("Trade with villager");
-                                if (Level.getGamemode() == 1){
+                               /* if (Level.getGamemode() == 1){
 tradeButton.setEnabled(false);
 print("You are in Creative so cannot complete trade. :( ");
-                            }
+                            } */
 				tradeButton.setOnClickListener(new android.view.View.OnClickListener() {
 					onClick: function(v) {
 						if (Level.getGameMode() == 1 || invContains(trades[rnd][0][1], trades[rnd][0][2])) { //if the player is in creative mode or has enough of the required item to trade
