@@ -35,7 +35,8 @@ function procCmd(command)
 var cmd = command.split(" ");
 if(cmd[0] == "trade")
 {
-Level.spawnMob(X, Y-1, Z, 15); //spawns villager to trade with!
+bl_spawnMob(getPlayerX(),getPlayerY()-1,getPlayerZ(),15);
+//Level.spawnMob(X, Y-1, Z, 15); //spawns villager to trade with!
 		clientMessage("Spawned Villager!");
 }
 }
