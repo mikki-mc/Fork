@@ -1,4 +1,4 @@
-// Trading mod by tombailey94; trades are *mostly* (lower values for count are used; e.g. 2 emeralds for leather cap not 2-3 emeralds and, also, trades involving items that are not in Pocket Edition are omitted)  according to http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1e/Trading-Chart.png
+// Trading mod by tombailey94 and rj0495 (SpiderPig); trades are *mostly* (lower values for count are used; e.g. 2 emeralds for leather cap not 2-3 emeralds and, also, trades involving items that are not in Pocket Edition are omitted)  according to http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1e/Trading-Chart.png
 // version 0.0.3 (butcher and farmer implemented, trades for blacksmith, librarian and priest still to go)
 
 var imgview;
