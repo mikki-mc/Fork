@@ -28,12 +28,7 @@ function leaveGame() { //exit world
 	}
 }
 
-function tradeCmd(cmd) {
-	if(cmd == "trade") { 
-		Level.spawnMob(X, Y-1, Z, 15); //spawns villager to trade with!
-		clientMessage("Spawned Villager!");
-	} 
-	} 
+
 
 function procCmd(command)
 {
