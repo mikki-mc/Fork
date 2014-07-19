@@ -28,6 +28,14 @@ function leaveGame() { //exit world
 	}
 }
 
+function tradeCmd(cmd) {
+	if(cmd == "trade") { 
+		Entity.spawnMob(par1double, par2double, par3double, par4int, par5String); //spawns villager to trade with!
+		clientMessage("Spawned Villager!");
+	} 
+	} 
+
+
 function attackHook(attacker, victim) {
 if (Entity.getEntityTypeId(victim) == 15){
 	if (Player.getCarriedItem == 0) { //player attacked a villager
