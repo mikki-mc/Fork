@@ -57,7 +57,7 @@ if (Entity.getEntityTypeId(victim) == 15){
         preventDefault();
 		//Entity.setHealth(victim, Entity.getHealth(victim)+1); //restore health back to normal (presumes player hit villager with empty hand and not sword, etc)
 var demo = Entity.getEntityTypeId(victim);
-             print("Error: "+demo);
+             print("Entity Type: "+demo);
 
 var demo1 = Entity.getMobSkin(victim);
              print("Skin: "+demo1);
