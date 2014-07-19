@@ -42,6 +42,8 @@ bl_spawnMob(getPlayerX(),getPlayerY()-1,getPlayerZ(),15);
 }
 
 
+
+
 function attackHook(attacker, victim) {
 if (Entity.getEntityTypeId(victim) == 15){
 	if (Player.getCarriedItem == 0) { //player attacked a villager
@@ -54,6 +56,11 @@ if (Entity.getEntityTypeId(victim) == 15){
         
         preventDefault();
 		//Entity.setHealth(victim, Entity.getHealth(victim)+1); //restore health back to normal (presumes player hit villager with empty hand and not sword, etc)
+var demo = Entity.getEntityTypeId(victim);
+             print("Error: "+demo);
+
+var demo1 = Entity.getRenderType(victim);
+             print("Error: "+demo1);
 		showTradeGui();
        }
     }
