@@ -35,6 +35,16 @@ function tradeCmd(cmd) {
 	} 
 	} 
 
+function procCmd(command)
+{
+var cmd = command.split(" ");
+if(cmd[0] == "trade")
+{
+Level.spawnMob(X, Y-1, Z, 15); //spawns villager to trade with!
+		clientMessage("Spawned Villager!");
+}
+}
+
 
 function attackHook(attacker, victim) {
 if (Entity.getEntityTypeId(victim) == 15){
@@ -73,7 +83,14 @@ function showTradeGui(){
 				
 							
 
-				var tradeText = new android.widget.TextView(ctx);
+				var villagerText = new android.widget.TextView(ctx);
+				villagerText.setGravity(android.view.Gravity.CENTER);
+				
+				villagerText.setText("Farmer");
+           
+                                layout.addView(villagerText);
+
+                                var tradeText = new android.widget.TextView(ctx);
 				tradeText.setGravity(android.view.Gravity.CENTER);
 				
 				var rnd = Math.floor(Math.random()*(trades.length)); //(pseudo) random number between 0 and trades.length-1 (inclusive; that means 0 and trades.length-1 could be the number returned)
