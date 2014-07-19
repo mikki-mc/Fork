@@ -30,7 +30,7 @@ function leaveGame() { //exit world
 
 function tradeCmd(cmd) {
 	if(cmd == "trade") { 
-		Entity.spawnMob(par1double, par2double, par3double, par4int, par5String); //spawns villager to trade with!
+		Level.spawnMob(X, Y-1, Z, 15); //spawns villager to trade with!
 		clientMessage("Spawned Villager!");
 	} 
 	} 
