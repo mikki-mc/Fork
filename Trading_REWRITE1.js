@@ -88,7 +88,7 @@ function showTradeGui(){
 
 				var villagerText = new android.widget.TextView(ctx);
 				villagerText.setGravity(android.view.Gravity.CENTER);
-				villagerText.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
+				villagerText.setTextSize(24);
 
 				villagerText.setText("Farmer");
                                 layout.addView(villagerText);
